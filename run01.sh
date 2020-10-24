@@ -1,7 +1,7 @@
 #!/bin/bash
 start=`date +%s`
 
-gmx pdb2gmx -f subject.pdb -o 1.gro -p 1.top -water spce -ff 'gromos53a6'
+gmx pdb2gmx -f subject.pdb -o 1.gro -p 1.top -water spce
 
 # printf "\nUse this command while working to ignore the hydrogen atoms if consisted, because it generates few complications while compiling in later phases: \n"
 # gmx pdb2gmx -f subject.pdb -o 1.gro -p 1.top -water spce -ignh
